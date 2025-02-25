@@ -115,17 +115,7 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"timer\""
-              ]
-            }
-          ]
+          "actions": []
         }
       ],
       "layers": [
