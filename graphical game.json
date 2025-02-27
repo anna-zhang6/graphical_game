@@ -236,7 +236,7 @@
       "title": "",
       "v": 255,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -244,7 +244,7 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
+        "snap": true,
         "zoomFactor": 0.4950840073748888,
         "windowMask": false
       },
@@ -272,14 +272,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 99,
+          "height": 64,
           "keepRatio": true,
           "layer": "",
           "name": "FemaleCharacter11",
           "persistentUuid": "9147f1b6-c722-4b9f-9055-1985c7a203e6",
-          "width": 96,
-          "x": 257,
-          "y": 479,
+          "width": 63,
+          "x": 193,
+          "y": 512,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -355,7 +355,23 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "acceleration": 90000,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 90000,
+              "ignoreDefaultControls": false,
+              "maxSpeed": 100,
+              "movementAngleOffset": 0,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "viewpoint": "TopDown"
+            }
+          ],
           "animations": [
             {
               "name": "Walking Down",
@@ -864,14 +880,22 @@
               ]
             }
           ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
           "actions": [
             {
               "type": {
-                "value": "ResetTimer"
+                "value": "CentreCamera"
               },
               "parameters": [
                 "",
-                "\"Timer\""
+                "FemaleCharacter11",
+                "",
+                "",
+                "3"
               ]
             }
           ]
@@ -947,6 +971,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         }
       ]
     }
