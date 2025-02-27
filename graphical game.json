@@ -880,7 +880,19 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "4",
+                "",
+                ""
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -895,7 +907,7 @@
                 "FemaleCharacter11",
                 "",
                 "",
-                "3"
+                ""
               ]
             }
           ]
